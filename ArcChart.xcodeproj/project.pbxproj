@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C84E6F18260DE76B00E36BDF /* ArcChartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E6F17260DE76B00E36BDF /* ArcChartApp.swift */; };
+		C84E6F1A260DE76B00E36BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E6F19260DE76B00E36BDF /* ContentView.swift */; };
+		C84E6F1C260DE76D00E36BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84E6F1B260DE76D00E36BDF /* Assets.xcassets */; };
+		C84E6F1F260DE76D00E36BDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84E6F1E260DE76D00E36BDF /* Preview Assets.xcassets */; };
+		C84E6F2A260DE76D00E36BDF /* ArcChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E6F29260DE76D00E36BDF /* ArcChartTests.swift */; };
+		C84E6F35260DE76D00E36BDF /* ArcChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E6F34260DE76D00E36BDF /* ArcChartUITests.swift */; };
+		C84E6F46260DE82500E36BDF /* ArcChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E6F45260DE82500E36BDF /* ArcChartView.swift */; };
+		C8CE13FC261328410028AF57 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE13FB261328410028AF57 /* Arc.swift */; };
+		C8CE1401261329390028AF57 /* ArcSizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1400261329390028AF57 /* ArcSizeHelper.swift */; };
+		C8CE1406261329DB0028AF57 /* ArcPropertyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1405261329DB0028AF57 /* ArcPropertyCalculator.swift */; };
+		C8CE140B26132A330028AF57 /* ArcSegmentOverflowPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE140A26132A330028AF57 /* ArcSegmentOverflowPolicy.swift */; };
+		C8CE141026132A3E0028AF57 /* ArcSegmentFillPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE140F26132A3E0028AF57 /* ArcSegmentFillPolicy.swift */; };
+		C8CE141526132A660028AF57 /* IndexedSegmentLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE141426132A660028AF57 /* IndexedSegmentLines.swift */; };
+		C8CE141A26132ABC0028AF57 /* ArcSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE141926132ABC0028AF57 /* ArcSegment.swift */; };
+		C8CE141F26132ADE0028AF57 /* ArcProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE141E26132ADE0028AF57 /* ArcProperties.swift */; };
+		C8CE142426132AE80028AF57 /* ArcSegmentProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE142326132AE80028AF57 /* ArcSegmentProperty.swift */; };
+		C8CE142926132B1E0028AF57 /* FinalLineProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE142826132B1E0028AF57 /* FinalLineProperties.swift */; };
+		C8CE142E26132B8A0028AF57 /* RelationalArcChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE142D26132B8A0028AF57 /* RelationalArcChart.swift */; };
+		C8CE1437261370370028AF57 /* RelationalChartExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1436261370370028AF57 /* RelationalChartExample.swift */; };
+		C8CE143F2613AC530028AF57 /* UniformChartExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE143E2613AC530028AF57 /* UniformChartExample.swift */; };
+		C8CE14442614817D0028AF57 /* ArcSegmentSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE14432614817D0028AF57 /* ArcSegmentSpacer.swift */; };
+		C8CE144A2614821D0028AF57 /* BasicWedge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE14492614821D0028AF57 /* BasicWedge.swift */; };
+		C8CE14522614822A0028AF57 /* UniformWedge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE14512614822A0028AF57 /* UniformWedge.swift */; };
+		C8CE1457261482330028AF57 /* RelationalWedge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1456261482330028AF57 /* RelationalWedge.swift */; };
+		C8CE145C2614826F0028AF57 /* WedgeFillStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE145B2614826F0028AF57 /* WedgeFillStyle.swift */; };
+		C8CE1462261482D30028AF57 /* BaseArcChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1461261482D30028AF57 /* BaseArcChart.swift */; };
+		C8CE146A261483030028AF57 /* UniformArcChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1469261483030028AF57 /* UniformArcChart.swift */; };
+		C8CE1477261504240028AF57 /* ScaleAndFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1476261504240028AF57 /* ScaleAndFade.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C84E6F26260DE76D00E36BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84E6F0C260DE76B00E36BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84E6F13260DE76B00E36BDF;
+			remoteInfo = ArcChart;
+		};
+		C84E6F31260DE76D00E36BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84E6F0C260DE76B00E36BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84E6F13260DE76B00E36BDF;
+			remoteInfo = ArcChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C84E6F14260DE76B00E36BDF /* ArcChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84E6F17260DE76B00E36BDF /* ArcChartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcChartApp.swift; sourceTree = "<group>"; };
+		C84E6F19260DE76B00E36BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C84E6F1B260DE76D00E36BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C84E6F1E260DE76D00E36BDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C84E6F20260DE76D00E36BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84E6F25260DE76D00E36BDF /* ArcChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84E6F29260DE76D00E36BDF /* ArcChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcChartTests.swift; sourceTree = "<group>"; };
+		C84E6F2B260DE76D00E36BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84E6F30260DE76D00E36BDF /* ArcChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84E6F34260DE76D00E36BDF /* ArcChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcChartUITests.swift; sourceTree = "<group>"; };
+		C84E6F36260DE76D00E36BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84E6F45260DE82500E36BDF /* ArcChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcChartView.swift; sourceTree = "<group>"; };
+		C8CE13FB261328410028AF57 /* Arc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arc.swift; sourceTree = "<group>"; };
+		C8CE1400261329390028AF57 /* ArcSizeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSizeHelper.swift; sourceTree = "<group>"; };
+		C8CE1405261329DB0028AF57 /* ArcPropertyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcPropertyCalculator.swift; sourceTree = "<group>"; };
+		C8CE140A26132A330028AF57 /* ArcSegmentOverflowPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSegmentOverflowPolicy.swift; sourceTree = "<group>"; };
+		C8CE140F26132A3E0028AF57 /* ArcSegmentFillPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSegmentFillPolicy.swift; sourceTree = "<group>"; };
+		C8CE141426132A660028AF57 /* IndexedSegmentLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexedSegmentLines.swift; sourceTree = "<group>"; };
+		C8CE141926132ABC0028AF57 /* ArcSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSegment.swift; sourceTree = "<group>"; };
+		C8CE141E26132ADE0028AF57 /* ArcProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcProperties.swift; sourceTree = "<group>"; };
+		C8CE142326132AE80028AF57 /* ArcSegmentProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSegmentProperty.swift; sourceTree = "<group>"; };
+		C8CE142826132B1E0028AF57 /* FinalLineProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalLineProperties.swift; sourceTree = "<group>"; };
+		C8CE142D26132B8A0028AF57 /* RelationalArcChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationalArcChart.swift; sourceTree = "<group>"; };
+		C8CE1436261370370028AF57 /* RelationalChartExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationalChartExample.swift; sourceTree = "<group>"; };
+		C8CE143E2613AC530028AF57 /* UniformChartExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformChartExample.swift; sourceTree = "<group>"; };
+		C8CE14432614817D0028AF57 /* ArcSegmentSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSegmentSpacer.swift; sourceTree = "<group>"; };
+		C8CE14492614821D0028AF57 /* BasicWedge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicWedge.swift; sourceTree = "<group>"; };
+		C8CE14512614822A0028AF57 /* UniformWedge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformWedge.swift; sourceTree = "<group>"; };
+		C8CE1456261482330028AF57 /* RelationalWedge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationalWedge.swift; sourceTree = "<group>"; };
+		C8CE145B2614826F0028AF57 /* WedgeFillStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WedgeFillStyle.swift; sourceTree = "<group>"; };
+		C8CE1461261482D30028AF57 /* BaseArcChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseArcChart.swift; sourceTree = "<group>"; };
+		C8CE1469261483030028AF57 /* UniformArcChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformArcChart.swift; sourceTree = "<group>"; };
+		C8CE1476261504240028AF57 /* ScaleAndFade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAndFade.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C84E6F11260DE76B00E36BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E6F22260DE76D00E36BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E6F2D260DE76D00E36BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C84E6F0B260DE76B00E36BDF = {
+			isa = PBXGroup;
+			children = (
+				C84E6F16260DE76B00E36BDF /* ArcChart */,
+				C84E6F28260DE76D00E36BDF /* ArcChartTests */,
+				C84E6F33260DE76D00E36BDF /* ArcChartUITests */,
+				C84E6F15260DE76B00E36BDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C84E6F15260DE76B00E36BDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C84E6F14260DE76B00E36BDF /* ArcChart.app */,
+				C84E6F25260DE76D00E36BDF /* ArcChartTests.xctest */,
+				C84E6F30260DE76D00E36BDF /* ArcChartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C84E6F16260DE76B00E36BDF /* ArcChart */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE1435261370290028AF57 /* example */,
+				C8CE13F9261328300028AF57 /* source */,
+				C84E6F17260DE76B00E36BDF /* ArcChartApp.swift */,
+				C84E6F1B260DE76D00E36BDF /* Assets.xcassets */,
+				C84E6F20260DE76D00E36BDF /* Info.plist */,
+				C84E6F1D260DE76D00E36BDF /* Preview Content */,
+			);
+			path = ArcChart;
+			sourceTree = "<group>";
+		};
+		C84E6F1D260DE76D00E36BDF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C84E6F1E260DE76D00E36BDF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C84E6F28260DE76D00E36BDF /* ArcChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				C84E6F29260DE76D00E36BDF /* ArcChartTests.swift */,
+				C84E6F2B260DE76D00E36BDF /* Info.plist */,
+			);
+			path = ArcChartTests;
+			sourceTree = "<group>";
+		};
+		C84E6F33260DE76D00E36BDF /* ArcChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C84E6F34260DE76D00E36BDF /* ArcChartUITests.swift */,
+				C84E6F36260DE76D00E36BDF /* Info.plist */,
+			);
+			path = ArcChartUITests;
+			sourceTree = "<group>";
+		};
+		C8CE13F9261328300028AF57 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE1472261483CF0028AF57 /* view */,
+				C8CE13FA261328360028AF57 /* model */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		C8CE13FA261328360028AF57 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE14712614833C0028AF57 /* Utility */,
+				C8CE14602614829B0028AF57 /* ArcChart */,
+				C8CE1448261482110028AF57 /* Wedges */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C8CE1435261370290028AF57 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				C84E6F19260DE76B00E36BDF /* ContentView.swift */,
+				C8CE1436261370370028AF57 /* RelationalChartExample.swift */,
+				C8CE143E2613AC530028AF57 /* UniformChartExample.swift */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		C8CE1448261482110028AF57 /* Wedges */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE14492614821D0028AF57 /* BasicWedge.swift */,
+				C8CE14512614822A0028AF57 /* UniformWedge.swift */,
+				C8CE1456261482330028AF57 /* RelationalWedge.swift */,
+				C8CE145B2614826F0028AF57 /* WedgeFillStyle.swift */,
+			);
+			path = Wedges;
+			sourceTree = "<group>";
+		};
+		C8CE14602614829B0028AF57 /* ArcChart */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE13FB261328410028AF57 /* Arc.swift */,
+				C8CE141926132ABC0028AF57 /* ArcSegment.swift */,
+				C8CE14432614817D0028AF57 /* ArcSegmentSpacer.swift */,
+				C8CE142D26132B8A0028AF57 /* RelationalArcChart.swift */,
+				C8CE1461261482D30028AF57 /* BaseArcChart.swift */,
+				C8CE1469261483030028AF57 /* UniformArcChart.swift */,
+			);
+			path = ArcChart;
+			sourceTree = "<group>";
+		};
+		C8CE14712614833C0028AF57 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE141E26132ADE0028AF57 /* ArcProperties.swift */,
+				C8CE140A26132A330028AF57 /* ArcSegmentOverflowPolicy.swift */,
+				C8CE140F26132A3E0028AF57 /* ArcSegmentFillPolicy.swift */,
+				C8CE1400261329390028AF57 /* ArcSizeHelper.swift */,
+				C8CE141426132A660028AF57 /* IndexedSegmentLines.swift */,
+				C8CE142826132B1E0028AF57 /* FinalLineProperties.swift */,
+				C8CE142326132AE80028AF57 /* ArcSegmentProperty.swift */,
+				C8CE1405261329DB0028AF57 /* ArcPropertyCalculator.swift */,
+				C8CE1476261504240028AF57 /* ScaleAndFade.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C8CE1472261483CF0028AF57 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C84E6F45260DE82500E36BDF /* ArcChartView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C84E6F13260DE76B00E36BDF /* ArcChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84E6F39260DE76D00E36BDF /* Build configuration list for PBXNativeTarget "ArcChart" */;
+			buildPhases = (
+				C84E6F10260DE76B00E36BDF /* Sources */,
+				C84E6F11260DE76B00E36BDF /* Frameworks */,
+				C84E6F12260DE76B00E36BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcChart;
+			productName = ArcChart;
+			productReference = C84E6F14260DE76B00E36BDF /* ArcChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C84E6F24260DE76D00E36BDF /* ArcChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84E6F3C260DE76D00E36BDF /* Build configuration list for PBXNativeTarget "ArcChartTests" */;
+			buildPhases = (
+				C84E6F21260DE76D00E36BDF /* Sources */,
+				C84E6F22260DE76D00E36BDF /* Frameworks */,
+				C84E6F23260DE76D00E36BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84E6F27260DE76D00E36BDF /* PBXTargetDependency */,
+			);
+			name = ArcChartTests;
+			productName = ArcChartTests;
+			productReference = C84E6F25260DE76D00E36BDF /* ArcChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C84E6F2F260DE76D00E36BDF /* ArcChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84E6F3F260DE76D00E36BDF /* Build configuration list for PBXNativeTarget "ArcChartUITests" */;
+			buildPhases = (
+				C84E6F2C260DE76D00E36BDF /* Sources */,
+				C84E6F2D260DE76D00E36BDF /* Frameworks */,
+				C84E6F2E260DE76D00E36BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84E6F32260DE76D00E36BDF /* PBXTargetDependency */,
+			);
+			name = ArcChartUITests;
+			productName = ArcChartUITests;
+			productReference = C84E6F30260DE76D00E36BDF /* ArcChartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C84E6F0C260DE76B00E36BDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C84E6F13260DE76B00E36BDF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					C84E6F24260DE76D00E36BDF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = C84E6F13260DE76B00E36BDF;
+					};
+					C84E6F2F260DE76D00E36BDF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = C84E6F13260DE76B00E36BDF;
+					};
+				};
+			};
+			buildConfigurationList = C84E6F0F260DE76B00E36BDF /* Build configuration list for PBXProject "ArcChart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C84E6F0B260DE76B00E36BDF;
+			productRefGroup = C84E6F15260DE76B00E36BDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C84E6F13260DE76B00E36BDF /* ArcChart */,
+				C84E6F24260DE76D00E36BDF /* ArcChartTests */,
+				C84E6F2F260DE76D00E36BDF /* ArcChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C84E6F12260DE76B00E36BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E6F1F260DE76D00E36BDF /* Preview Assets.xcassets in Resources */,
+				C84E6F1C260DE76D00E36BDF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E6F23260DE76D00E36BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E6F2E260DE76D00E36BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C84E6F10260DE76B00E36BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E6F1A260DE76B00E36BDF /* ContentView.swift in Sources */,
+				C84E6F18260DE76B00E36BDF /* ArcChartApp.swift in Sources */,
+				C8CE143F2613AC530028AF57 /* UniformChartExample.swift in Sources */,
+				C8CE1437261370370028AF57 /* RelationalChartExample.swift in Sources */,
+				C8CE146A261483030028AF57 /* UniformArcChart.swift in Sources */,
+				C8CE13FC261328410028AF57 /* Arc.swift in Sources */,
+				C8CE145C2614826F0028AF57 /* WedgeFillStyle.swift in Sources */,
+				C8CE1462261482D30028AF57 /* BaseArcChart.swift in Sources */,
+				C8CE140B26132A330028AF57 /* ArcSegmentOverflowPolicy.swift in Sources */,
+				C8CE141A26132ABC0028AF57 /* ArcSegment.swift in Sources */,
+				C8CE1406261329DB0028AF57 /* ArcPropertyCalculator.swift in Sources */,
+				C8CE14442614817D0028AF57 /* ArcSegmentSpacer.swift in Sources */,
+				C8CE141026132A3E0028AF57 /* ArcSegmentFillPolicy.swift in Sources */,
+				C8CE141F26132ADE0028AF57 /* ArcProperties.swift in Sources */,
+				C84E6F46260DE82500E36BDF /* ArcChartView.swift in Sources */,
+				C8CE142E26132B8A0028AF57 /* RelationalArcChart.swift in Sources */,
+				C8CE1477261504240028AF57 /* ScaleAndFade.swift in Sources */,
+				C8CE144A2614821D0028AF57 /* BasicWedge.swift in Sources */,
+				C8CE142426132AE80028AF57 /* ArcSegmentProperty.swift in Sources */,
+				C8CE1457261482330028AF57 /* RelationalWedge.swift in Sources */,
+				C8CE1401261329390028AF57 /* ArcSizeHelper.swift in Sources */,
+				C8CE142926132B1E0028AF57 /* FinalLineProperties.swift in Sources */,
+				C8CE141526132A660028AF57 /* IndexedSegmentLines.swift in Sources */,
+				C8CE14522614822A0028AF57 /* UniformWedge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E6F21260DE76D00E36BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E6F2A260DE76D00E36BDF /* ArcChartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E6F2C260DE76D00E36BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E6F35260DE76D00E36BDF /* ArcChartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C84E6F27260DE76D00E36BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84E6F13260DE76B00E36BDF /* ArcChart */;
+			targetProxy = C84E6F26260DE76D00E36BDF /* PBXContainerItemProxy */;
+		};
+		C84E6F32260DE76D00E36BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84E6F13260DE76B00E36BDF /* ArcChart */;
+			targetProxy = C84E6F31260DE76D00E36BDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C84E6F37260DE76D00E36BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C84E6F38260DE76D00E36BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C84E6F3A260DE76D00E36BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ArcChart/Preview Content\"";
+				DEVELOPMENT_TEAM = F59U36GL6B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArcChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kw.ArcChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C84E6F3B260DE76D00E36BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ArcChart/Preview Content\"";
+				DEVELOPMENT_TEAM = F59U36GL6B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArcChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kw.ArcChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C84E6F3D260DE76D00E36BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F59U36GL6B;
+				INFOPLIST_FILE = ArcChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kw.ArcChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcChart.app/ArcChart";
+			};
+			name = Debug;
+		};
+		C84E6F3E260DE76D00E36BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F59U36GL6B;
+				INFOPLIST_FILE = ArcChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kw.ArcChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcChart.app/ArcChart";
+			};
+			name = Release;
+		};
+		C84E6F40260DE76D00E36BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F59U36GL6B;
+				INFOPLIST_FILE = ArcChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kw.ArcChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArcChart;
+			};
+			name = Debug;
+		};
+		C84E6F41260DE76D00E36BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F59U36GL6B;
+				INFOPLIST_FILE = ArcChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kw.ArcChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArcChart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C84E6F0F260DE76B00E36BDF /* Build configuration list for PBXProject "ArcChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E6F37260DE76D00E36BDF /* Debug */,
+				C84E6F38260DE76D00E36BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84E6F39260DE76D00E36BDF /* Build configuration list for PBXNativeTarget "ArcChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E6F3A260DE76D00E36BDF /* Debug */,
+				C84E6F3B260DE76D00E36BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84E6F3C260DE76D00E36BDF /* Build configuration list for PBXNativeTarget "ArcChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E6F3D260DE76D00E36BDF /* Debug */,
+				C84E6F3E260DE76D00E36BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84E6F3F260DE76D00E36BDF /* Build configuration list for PBXNativeTarget "ArcChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E6F40260DE76D00E36BDF /* Debug */,
+				C84E6F41260DE76D00E36BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C84E6F0C260DE76B00E36BDF /* Project object */;
+}
