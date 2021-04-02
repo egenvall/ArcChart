@@ -35,6 +35,8 @@
 		C8CE1462261482D30028AF57 /* BaseArcChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1461261482D30028AF57 /* BaseArcChart.swift */; };
 		C8CE146A261483030028AF57 /* UniformArcChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1469261483030028AF57 /* UniformArcChart.swift */; };
 		C8CE1477261504240028AF57 /* ScaleAndFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1476261504240028AF57 /* ScaleAndFade.swift */; };
+		C8CE1489261745060028AF57 /* ArcChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1488261745060028AF57 /* ArcChartViewModel.swift */; };
+		C8CE148E261745330028AF57 /* ArcChartOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE148D261745330028AF57 /* ArcChartOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		C8CE1461261482D30028AF57 /* BaseArcChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseArcChart.swift; sourceTree = "<group>"; };
 		C8CE1469261483030028AF57 /* UniformArcChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformArcChart.swift; sourceTree = "<group>"; };
 		C8CE1476261504240028AF57 /* ScaleAndFade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAndFade.swift; sourceTree = "<group>"; };
+		C8CE1488261745060028AF57 /* ArcChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcChartViewModel.swift; sourceTree = "<group>"; };
+		C8CE148D261745330028AF57 /* ArcChartOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcChartOptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,12 +222,14 @@
 		C8CE14602614829B0028AF57 /* ArcChart */ = {
 			isa = PBXGroup;
 			children = (
+				C8CE148D261745330028AF57 /* ArcChartOptions.swift */,
 				C8CE13FB261328410028AF57 /* Arc.swift */,
 				C8CE141926132ABC0028AF57 /* ArcSegment.swift */,
 				C8CE14432614817D0028AF57 /* ArcSegmentSpacer.swift */,
 				C8CE142D26132B8A0028AF57 /* RelationalArcChart.swift */,
 				C8CE1461261482D30028AF57 /* BaseArcChart.swift */,
 				C8CE1469261483030028AF57 /* UniformArcChart.swift */,
+				C8CE1488261745060028AF57 /* ArcChartViewModel.swift */,
 			);
 			path = ArcChart;
 			sourceTree = "<group>";
@@ -398,10 +404,12 @@
 				C84E6F46260DE82500E36BDF /* ArcChartView.swift in Sources */,
 				C8CE142E26132B8A0028AF57 /* RelationalArcChart.swift in Sources */,
 				C8CE1477261504240028AF57 /* ScaleAndFade.swift in Sources */,
+				C8CE1489261745060028AF57 /* ArcChartViewModel.swift in Sources */,
 				C8CE144A2614821D0028AF57 /* BasicWedge.swift in Sources */,
 				C8CE142426132AE80028AF57 /* ArcSegmentProperty.swift in Sources */,
 				C8CE1457261482330028AF57 /* RelationalWedge.swift in Sources */,
 				C8CE1401261329390028AF57 /* ArcSizeHelper.swift in Sources */,
+				C8CE148E261745330028AF57 /* ArcChartOptions.swift in Sources */,
 				C8CE142926132B1E0028AF57 /* FinalLineProperties.swift in Sources */,
 				C8CE141526132A660028AF57 /* IndexedSegmentLines.swift in Sources */,
 				C8CE14522614822A0028AF57 /* UniformWedge.swift in Sources */,

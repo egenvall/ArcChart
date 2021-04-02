@@ -11,6 +11,7 @@ class NumbersOnly: ObservableObject {
     }
 }
 struct RelationalChartExample: View {
+    @ObservedObject var viewModel: ArcChartViewModel
     @ObservedObject var rent = NumbersOnly()
     @ObservedObject var savings = NumbersOnly()
     @ObservedObject var groceries = NumbersOnly()
@@ -40,7 +41,7 @@ struct RelationalChartExample: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
             }.padding([.horizontal])
-            ArcChartView(relationalChart(), desiredLineThickness: 16, desiredLineSpacing: 4, centerSpacing: 64, overflowPolicy: .equalize, fillPolicy: .expandLineThickness, segmentLineCount: 1).transition(.scaleAndFade).padding()
+            ArcChartView(relationalChart(), viewModel: viewModel).transition(.scaleAndFade).padding()
         }.navigationTitle("Household")
         
     }

@@ -21,10 +21,10 @@ struct ExampleDetailView: View {
     var example: Example
     var body: some View {
         if example == .relational {
-            RelationalChartExample()
+            RelationalChartExample(viewModel: ArcChartViewModel(ArcChartOptions(desiredLineSpacing: 1, segmentLineCount: 1)))
         }
         else {
-            UniformChartExample()
+            UniformChartExample(viewModel: ArcChartViewModel())
         }
     }
 }
