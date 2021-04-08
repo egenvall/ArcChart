@@ -46,16 +46,38 @@ struct RelationalWedge: BasicWedge, RelationalWedgeConforming {
 }
 ```
 
-**`ArcChartView<T : BasicWedge> : View`**  
+**`ArcChartView<T : ArcChart> : View`**  
 The view that holds the chart and is responsible for drawing the chart based on the supplied parameters
 
 ```
-init(_ chart: BaseArcChart<T>, desiredLineThickness: CGFloat, desiredLineSpacing: CGFloat, centerSpacing: CGFloat = 32, overflowPolicy: ArcSegmentOverflowPolicy = .equalize, fillPolicy: ArcSegmentFillPolicy, segmentLineCount: Int = 10)
+init(_ chart: T, viewModel: ArcChartViewModel)
 ```
 
-`_ chart: BaseArcChart<T>` - Any chart conforming to BaseArcChart<T>  
+`_ chart: T` - 
+
+```
+protocol ArcChart: ObservableObject {
+    associatedtype T: BasicWedge
+    func getWedges() -> [Int : T]
+    func setWedges(_ wedges: [Int : T])
+    func getWedgeIds() -> [Int]
+}
+``` 
  Examples are `UniformArcChart<UniformWedge>` and `RelationalArcChart<RelationalWedge>`  
   
+  
+```
+struct ArcChartOptions {
+    let desiredLineThickness: CGFloat
+    let desiredLineSpacing: CGFloat
+    let centerSpacing: CGFloat
+    let overflowPolicy: ArcSegmentOverflowPolicy
+    let fillPolicy: ArcSegmentFillPolicy
+    let segmentLineCount: Int
+}
+```  
+
+
 `desiredLineThickness: CGFloat` - The desired lineThickness (depth) of each line in a segment.  
 This value of this property is **not** guaranteed to be used when drawing the chart, depending on [Overflow Policy](https://github.com/egenvall/ArcChart/blob/main/ArcChart/source/model/Utility/ArcSegmentOverflowPolicy.swift) and [Fill Policy](https://github.com/egenvall/ArcChart/blob/main/ArcChart/source/model/Utility/ArcSegmentFillPolicy.swift)  
 The chart will automatically resize `desiredLineThickness` and `desiredLineSpacing` based on policies to fit within its bounds. 
